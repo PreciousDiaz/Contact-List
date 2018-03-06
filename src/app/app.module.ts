@@ -6,6 +6,8 @@ import { AngularFirestoreModule, AngularFirestore } from 'angularfire2/firestore
 
 import { AppComponent } from './app.component';
 
+import { FormsModule } from '@angular/forms';
+
 var firebaseConfig = {
   apiKey: "AIzaSyA3S0VBldi81pJG4hdfc9EE3GQQ9lBBMVU",
   authDomain: "contact-list-ca149.firebaseapp.com",
@@ -23,6 +25,7 @@ var firebaseConfig = {
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
